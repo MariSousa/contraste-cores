@@ -1,0 +1,105 @@
+.containerApp {
+  width: 80%;
+  margin: 3rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.containerForm,
+.containerVisor {
+  width: 40%;
+}
+
+.containerForm label,
+.textVerificado,
+.mensagem {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #381f51;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.containerForm input {
+  border: none;
+  background: #eee;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  color: #484848;
+}
+
+.visorBack {
+  height: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.visorTexto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.formBackText {
+  display: flex;
+  gap: 30px;
+}
+
+.chromepicker {
+  width: 300px !important;
+  border-radius: 10px !important;
+  border: 2px solid #eee3ff;
+  margin-bottom: 0.8rem;
+}
+
+.chromepicker div {
+  border-radius: 10px 10px 0 0;
+}
+
+.buttonVerificar,
+.salvarCores {
+  appearance: none;
+  background: #6400f9;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  font-size: 01rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .containerApp {
+    flex-direction: column;
+  }
+  .containerForm {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .formBackText {
+    justify-content: space-between;
+  }
+  .textVerificado {
+    text-align: center;
+  }
+  .buttonVerificar,
+  .salvarCores {
+    display: flex;
+    margin: 2rem auto 0 auto;
+  }
+  .containerVisor {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .formBackText {
+    flex-direction: column;
+  }
+  .chromepicker {
+    width: 100% !important;
+  }
+}

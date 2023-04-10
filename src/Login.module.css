@@ -1,0 +1,93 @@
+.login {
+  height: 100vh;
+  background-image: url("./assets/back_Login.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.containerLogin {
+  width: 30rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.wrapperLogin {
+  background-color: white;
+  height: 70vh;
+  border-radius: 20px;
+  box-shadow: 1px 0px 7px 4px #0000002b;
+}
+
+.capaLogin {
+  margin-top: 5rem;
+}
+
+.capaLogin img {
+  border-radius: 20px 20px 0 0;
+}
+
+.containerForm {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formEmail,
+.formSenha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerForm h2 {
+  font-size: 2rem;
+  color: #381f51;
+}
+
+.containerForm label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #381f51;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.formEmail,
+.formSenha {
+  margin-bottom: 2rem;
+}
+
+.formEmail input,
+.formSenha input {
+  width: 250px;
+  border: 1px solid #381f51;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.containerForm button {
+  width: 100%;
+  border: 1px solid #381f51;
+  background-color: #381f51;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.mensagemSucesso {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  color: #381f51;
+}
+
+@media (max-width: 500px) {
+  .containerLogin {
+    width: 100%;
+  }
+}
